@@ -1,5 +1,7 @@
 package com.react.springboot.serverproductmanagement.config;
 
+import com.react.springboot.serverproductmanagement.jwt.JWTAuthorizationFilter;
+import com.react.springboot.serverproductmanagement.jwt.JwtTokenProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

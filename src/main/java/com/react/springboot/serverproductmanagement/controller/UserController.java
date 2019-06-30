@@ -1,5 +1,6 @@
 package com.react.springboot.serverproductmanagement.controller;
 
+import com.react.springboot.serverproductmanagement.jwt.JwtTokenProvider;
 import com.react.springboot.serverproductmanagement.model.Role;
 import com.react.springboot.serverproductmanagement.model.Transaction;
 import com.react.springboot.serverproductmanagement.model.User;
@@ -20,6 +21,9 @@ import java.time.LocalDateTime;
 
 @RestController
 public class UserController {
+
+    @Autowired
+    private JwtTokenProvider tokenProvider;
 
     @Autowired
     private UserService userService;
